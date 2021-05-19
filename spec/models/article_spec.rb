@@ -44,8 +44,8 @@ RSpec.describe Article, type: :model do
       older_article = create(:article, slug: "my-slug4", created_at: 1.minute.ago)
       recent_article = create(:article)
 
-      expect(described_class).to eq([recent_article, older_article)
-      expect(described_class.recent).to eq([recent_article, older_article)
+      expect(described_class).to eq([recent_article, older_article])
+      expect(described_class.recent).to eq([recent_article, older_article])
 
     end
   end
